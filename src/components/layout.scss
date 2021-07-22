@@ -1,30 +1,43 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
+  font: 400 100% proxima-nova, serif, sans-serif;
+  line-height: 1.53em;
   box-sizing: border-box;
   overflow-y: scroll;
 }
 body {
   margin: 0;
+  padding: 0 4rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
+  background-color: #071515;
+  color: #F2F2F2;
+  font-family: proxima-nova, serif;
+  font-weight: 400;
   word-wrap: break-word;
   font-kerning: normal;
+  letter-spacing: 0.04em;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+}
+body > div {
+  max-width: 1550px;
+  width: 100%;
+  margin: auto;
 }
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -32,6 +45,16 @@ nav,
 section,
 summary {
   display: block;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  .intro {
+    grid-column: 1 / span 7;
+  }
+  .work-gallery {
+    grid-column: 1 / span 12;
+  }
 }
 audio,
 canvas,
@@ -52,6 +75,8 @@ template {
 }
 a {
   background-color: transparent;
+  color: #fff;
+  text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -71,6 +96,9 @@ strong {
 dfn {
   font-style: italic;
 }
+::selection {
+  background-color: #025159;
+}
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -86,7 +114,7 @@ h1 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
-  line-height: 1.1;
+  line-height: 1.53;
 }
 mark {
   background-color: #ff0;
@@ -264,8 +292,8 @@ h2 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
+  font-size: 2.25rem;
+  line-height: 1.53;
 }
 h3 {
   margin-left: 0;
@@ -282,7 +310,7 @@ h3 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
-  line-height: 1.1;
+  line-height: 1.53;
 }
 h4 {
   margin-left: 0;
@@ -299,7 +327,7 @@ h4 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: 1.53;
 }
 h5 {
   margin-left: 0;
@@ -316,7 +344,7 @@ h5 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
-  line-height: 1.1;
+  line-height: 1.53;
 }
 h6 {
   margin-left: 0;
@@ -333,7 +361,7 @@ h6 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
-  line-height: 1.1;
+  line-height: 1.53;
 }
 hgroup {
   margin-left: 0;
@@ -398,6 +426,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 1.5em;
+  line-height: 1.53;
 }
 pre {
   margin-left: 0;
@@ -591,7 +621,5 @@ pre tt:after {
   content: "";
 }
 @media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+
 }
