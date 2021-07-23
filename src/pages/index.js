@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Work from "../components/workGallery/workGallery"
 
 const IndexPage = () => (
   <Layout>
@@ -13,9 +14,7 @@ const IndexPage = () => (
       <p>Using design &amp; technology, I’ve helped teams across the country take their objectives and translate them into growth strategies that were researched, executed, measured, and ultimately achieved through impactful brands, products, and services.</p>
     </div>
 
-    <div className="work-gallery">
-      Work goes here
-    </div>
+    <Work />
     
     {/* <StaticImage
       src="../images/gatsby-astronaut.png"

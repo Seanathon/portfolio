@@ -1,0 +1,50 @@
+.work-gallery {
+    grid-column: 3 / span 9;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    row-gap: 5.875rem;
+    margin-bottom: 15rem;
+    & > div {
+        position: relative;
+        grid-column: span 4;
+        height: 20rem;
+        &:nth-child(even) {
+            grid-column: 6 / span 4;
+        }
+        &:nth-child(odd) {
+            top: 12.5rem;
+        }
+        .featured-image {
+            display: block;
+            position: relative;
+            border: 5px solid rgba(242, 138, 46, 0);
+            height: 100%;
+            // height: auto;
+            max-width: 26rem;
+            width: 100%;
+            transition: border-color 360ms linear;
+            cursor: pointer;
+            overflow: hidden;
+            &:hover {
+                border-color: rgba(242, 138, 46, 1);
+            }
+            picture {
+                height: 100%;
+                width: 100%;
+            }
+            .gatsby-image-wrapper {
+                height: 100%;
+            }
+            img {
+                object-fit: cover;
+                transition: all 640ms ease-in-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        h3 {
+            margin-top: 0.5rem;
+        }
+    }
+}
