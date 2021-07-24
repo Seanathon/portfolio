@@ -1,20 +1,21 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 // import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { GatsbyImage, getSrc } from "gatsby-plugin-image"
 
 const CaseThumb = ({ src, alt, title }) => {
-    const image = 'sample-work-thumbnail.jpg';
+    // const image = getSrc(`../../images/${src}`)
+    // console.log(image)
     return (
         <div>
             <div className="featured-image">
-                {console.log(src)}
-                <StaticImage
-                    src={`../../images/${image}`}
+                <img src={`./../../images/${src}`} alt={alt} />
+                {/* <GatsbyImage
+                    image={image}
                     alt={alt}
                     loading="lazy"
                     objectFit="cover"
-                />
+                /> */}
             </div>
             <h3>{title}</h3>
         </div>
