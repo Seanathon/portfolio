@@ -2,10 +2,11 @@
     grid-column: 3 / span 9;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    row-gap: 5.875rem;
+    row-gap: 8rem;
     margin-bottom: 15rem;
     & > div {
         position: relative;
+        top: -6rem;
         grid-column: span 4;
         height: 20rem;
         &:nth-child(even) {

@@ -8,7 +8,7 @@ import Work from "../components/workGallery/workGallery"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Sean Yalda" />
+    <Seo title="Sean Yalda Online Portfolio" />
     <div className="intro">
       <h2>A Software Engineer &amp; Interactive Designer  experienced in information architecture, product management, and growth marketing.</h2>
       <p>Using design &amp; technology, I’ve helped teams across the country take their objectives and translate them into growth strategies that were researched, executed, measured, and ultimately achieved through impactful brands, products, and services.</p>

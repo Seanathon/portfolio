@@ -63,7 +63,21 @@ main {
 aside {
   grid-column: 9 / span 4;
   .bullets {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+  }
+}
+.actions {
+  line-height: 2.7em;
+  a {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    &::after {
+      position: relative;
+      top: 0.125rem;
+      content: url('/images/arrow.svg');
+      margin-left: 0.5rem;
+    }
   }
 }
 audio,
@@ -156,7 +170,41 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
+}
+.image-gallery {
+  display: grid;
+  grid-column: 1 / span 12;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  &__3x2 {
+    & > *:first-child {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+    div {
+      grid-column: 3 / span 1;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 2rem;
+    }
+  }
+}
+.featured-image__about {
+  position: absolute;
+  left: -8rem;
+  top: 8rem;
+  z-index: -1;
+  .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    &__linear-right {
+      background: linear-gradient(90deg, rgba(2,81,89,0) 0%, rgba(12,24,22,1) 100%);
+    }
+  }
 }
 svg:not(:root) {
   overflow: hidden;
