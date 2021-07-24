@@ -49,8 +49,21 @@ summary {
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  row-gap: 6rem;
   .intro {
     grid-column: 1 / span 7;
+    &__right {
+      grid-column: 6 / span 7;
+    }
+    &__inset {
+      grid-column: 2 / span 6;
+    }
+  }
+}
+aside {
+  grid-column: 9 / span 4;
+  .bullets {
+    margin-bottom: 4rem;
   }
 }
 audio,
@@ -381,6 +394,19 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
+}
+ul.bullets {
+  list-style-type: none;
+  padding-left: 0;
+  grid-column: span 4;
+  li {
+    &.title {
+      font-size: 0.888rem;
+      color: #F2F0CE;
+    }
+    border-bottom: 1px solid #B8BEBF;
+    padding-bottom: 0.6667rem;
+  }
 }
 ol {
   margin-left: 1.45rem;
