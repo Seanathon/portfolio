@@ -18,7 +18,7 @@ const IndexPage = () => (
         <div className="mask mask__linear-right"></div>
     </div>
     <div className="intro intro__right">
-      <h2>About Sean Yalda</h2>
+      <h1>About Sean Yalda</h1>
       <p>Sean has been bringing ideas online since 2002. Professionally, he’s been employed in tech startups and digital agencies for eight years now. In this time, he’s helped many businesses make a profit &amp; impact.</p>
       <p>Early on, Sean realized he was driven to make people’s lives easier through strategy, design, and technology. Needless to say, he’s still driven.</p>
       <p>His expertise has aided organizations across education, sports, music, science, art, real estate, entertainment, retail, and more. Things like Information architecture, UX research, interface design, and software engineering. </p>
@@ -27,30 +27,65 @@ const IndexPage = () => (
           <a href="#">Designer Resume</a>
       </div>
     </div>
-    <ul className="bullets">
-        <li className="title">Previously worked with</li>
-        <li>PlayVS</li>
-        <li>Pitch Black Media</li>
-        <li>Prettybird Productions</li>
-        <li>FACINGS</li>
-        <li>Oakland University</li>
-    </ul>
-    <ul className="bullets">
-        <li className="title">Services</li>
-        <li>Software Engineering &amp; Web Development</li>
-        <li>Information Architecture &amp; System Design</li>
-        <li>User Experience &amp; Interface Design</li>
-        <li>Pitch Deck &amp; Prototype Design</li>
-        <li>Creative Direction &amp; Consulting</li>
-    </ul>
-    <ul className="bullets">
-        <li className="title">Key Strengths</li>
-        <li>Strategic Vision &amp; Creative thinking</li>
+    <div className="row">
+      <h2>Clients</h2>
+      <ul className="bullets">
+          <li></li>
+          <li>PlayVS</li>
+          <li>Pitch Black Media</li>
+          <li>Michigan Science Center</li>
+          <li>FACINGS</li>
+          <li>Oakland University</li>
+          <li>8° Plato</li>
+      </ul>
+      <ul className="bullets">
+          <li></li>
+          <li>Prettybird Productions</li>
+          <li>Open Source Labs</li>
+          <li>Fourclops</li>
+          <li>Alumni Association of U of M</li>
+          <li>Sun Communities</li>
+          <li>City of Detroit</li>
+      </ul>
+    </div>
+    <div className="row">
+      <h2>Services</h2>
+      <ul className="bullets">
+          <li></li>
+          <li>Software Engineering</li>
+          <li>Information Architecture</li>
+          <li>User Experience</li>
+          <li>Pitch Deck</li>
+          <li>Creative Direction</li>
+      </ul>
+      <ul className="bullets">
+          <li></li>
+          <li>Product Management</li>
+          <li>System Design</li>
+          <li>Interface Design</li>
+          <li>Prototype Design</li>
+          <li>Consulting</li>
+      </ul>
+    </div>
+    <div className="row">
+      <h2>Key Strengths</h2>
+      <ul className="bullets">
+          <li></li>
+        <li>Full Stack Development</li>
+        <li>Strategic Vision</li>
         <li>Building and Scaling Teams</li>
-        <li>Excellent Presentation Skills</li>
+        <li>User Research</li>
+        <li>Usability Testing</li>
+      </ul>
+      <ul className="bullets">
+          <li></li>
+        <li>Data &amp; Content Modeling</li>
+        <li>Presentations</li>
         <li>Process &amp; Documentation Creation</li>
         <li>Cost/Value Analysis</li>
-    </ul>
+        <li>Data Structures</li>
+      </ul>
+    </div>
     <div className="image-gallery image-gallery__3x2">
         <StaticImage
           src="../../static/images/sean-yalda-iceland.jpg"
