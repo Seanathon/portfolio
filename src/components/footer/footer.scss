@@ -63,3 +63,36 @@ footer {
         bottom: 0;
     }
 }
+
+@media only screen and (max-width: 72rem) {
+    footer {
+        .ancillary {
+            grid-column: 8 / span 2;
+        } 
+        .social {
+            grid-column: 10 / span 3;
+        }
+        .email {
+            grid-column: 6 / span 3;
+        }
+        .phone {
+            grid-column: 9 / span 3;
+        }
+        .copyright {
+            grid-column: 1 / span 12;
+        }
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    footer {
+        grid-template-rows: auto;
+        row-gap: 2rem;
+        padding-bottom: 4rem;
+        & > div,
+        & > ul {
+            grid-row: auto !important;
+            grid-column: 1 / span 12 !important;
+        }
+    }
+}

@@ -6,7 +6,7 @@ import "./footer.scss"
 const Footer = ({ social }) => (
     <div style={{position: 'static'}}>
         <footer>
-            <div className="description">Software Engineer and UX Design Consultant specialising in content, growth and marketing.</div>
+            <div className="description">Sean Yalda is a Software Engineer and UX Design Consultant specialising in content, growth and marketing.</div>
             <ul className="pages">
                 <li><Link to="/info">Info</Link></li>
                 <li><Link to="/work">Work</Link></li>

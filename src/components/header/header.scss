@@ -30,3 +30,33 @@ header {
         }
     }
 }
+
+@media only screen and (max-width: 38rem) {
+    header {
+        margin-bottom: 4rem;
+        font-size: 14px;
+        h1 {
+            font-size: 1.32rem;
+        }
+        ul {
+            li {
+                margin-left: 1.5rem;
+            }
+        }
+      }
+  }
+
+@media only screen and (max-width: 30rem) {
+    header {
+      margin-bottom: 3rem;
+      font-size: 12px;
+      h1 {
+          font-size: 1.25rem;
+      }
+      ul {
+          li {
+              margin-left: 1.25rem;
+          }
+      }
+    }
+}
