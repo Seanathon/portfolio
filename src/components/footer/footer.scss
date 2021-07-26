@@ -84,6 +84,15 @@ footer {
     }
 }
 
+@media only screen and (max-width: 53rem) {
+    footer {
+        &::after {
+            right: -3rem;
+            left: -3rem;
+        }
+    }
+}
+
 @media only screen and (max-width: 48rem) {
     footer {
         grid-template-rows: auto;
@@ -93,6 +102,15 @@ footer {
         & > ul {
             grid-row: auto !important;
             grid-column: 1 / span 12 !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 26rem) {
+    footer {
+        &::after {
+            right: -2rem;
+            left: -2rem;
         }
     }
 }

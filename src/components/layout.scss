@@ -738,3 +738,9 @@ pre tt:after {
       display: block;
     }
 }
+
+@media only screen and (max-width: 26rem) {
+  body {
+    padding: 0 2rem;
+  }
+}
