@@ -712,6 +712,12 @@ pre tt:after {
   main {
     .intro {
       grid-column: 1 / span 10;
+      &__right {
+        grid-column: 6/span 7;
+      }
+      &__inset {
+        grid-column: 1 / span 7;
+      }
     }
   }
 }
