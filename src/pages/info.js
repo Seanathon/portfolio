@@ -1,6 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
+// import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -9,7 +9,12 @@ const IndexPage = () => (
   <Layout>
     <Seo title="About Sean Yalda" />
     <div className="featured-image__about">
-        <img src="../../images/sean-yalda-polaroid.jpg" alt="Sean Yalda journaling" />
+        <StaticImage
+          src="../../static/images/sean-yalda-polaroid.jpg"
+          alt="Sean Yalda journaling"
+          placeholder="dominantColor"
+          loading="eager"
+        />
         <div className="mask mask__linear-right"></div>
     </div>
     <div className="intro intro__right">
@@ -47,10 +52,25 @@ const IndexPage = () => (
         <li>Cost/Value Analysis</li>
     </ul>
     <div className="image-gallery image-gallery__3x2">
-        <img src="../../images/sean-yalda-iceland.jpg" />
+        <StaticImage
+          src="../../static/images/sean-yalda-iceland.jpg"
+          alt="Sean Yalda on a Mountain in Iceland"
+          placeholder="dominantColor"
+          loading="lazy"
+        />
         <div>
-            <img src="../../images/sean-yalda-portrait.jpg" />
-            <img src="../../images/sean-yalda-group.jpg" />
+            <StaticImage
+              src="../../static/images/sean-yalda-portrait.jpg"
+              alt="Sean Yalda Portrait on the Computer"
+              placeholder="dominantColor"
+              loading="lazy"
+            />
+            <StaticImage
+              src="../../static/images/sean-yalda-group.jpg"
+              alt="Sean Yalda with a Group of Creatives"
+              placeholder="dominantColor"
+              loading="lazy"
+            />
         </div>
     </div>
     <div className="intro intro__inset">
