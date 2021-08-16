@@ -13,8 +13,8 @@ const Footer = ({ social }) => (
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
             <ul className="ancillary">
-                <li><Link to="/newsletter">Newsletter</Link></li>
-                <li><Link to="/bookshelf">Bookshelf</Link></li>
+                {/* <li><Link to="/newsletter">Newsletter</Link></li> */}
+                {/* <li><Link to="/bookshelf">Bookshelf</Link></li> */}
             </ul>
             <ul className="social">
                 <li><Link to={`https://linkedin.com/in/${social.in}`}>LinkedIn</Link></li>
