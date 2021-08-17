@@ -51,6 +51,9 @@ main {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
   row-gap: 6rem;
+  &.work {
+    row-gap: 4rem;
+  }
   .intro {
     grid-column: 1 / span 7;
     &__right {
@@ -58,6 +61,22 @@ main {
     }
     &__inset {
       grid-column: 2 / span 6;
+    }
+    &__stretch {
+      grid-column: 1 / span 10;
+    }
+    &__case-study {
+      grid-column: span 12;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 2rem;
+      h1, h2 {
+        grid-column: span 4;
+        line-height: 1em;
+      }
+      *:last-child {
+        grid-column: span 8;
+      }
     }
   }
 }
@@ -205,20 +224,26 @@ img {
     }
   }
 }
-.featured-image__about {
-  position: absolute;
-  left: -8rem;
-  top: 8rem;
-  z-index: -1;
-  .mask {
+.featured-image {
+  &__about {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    &__linear-right {
-      background: linear-gradient(90deg, rgba(2,81,89,0) 35%, rgba(12,24,22,1) 100%);
+    left: -8rem;
+    top: 8rem;
+    z-index: -1;
+    .mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      &__linear-right {
+        background: linear-gradient(90deg, rgba(2,81,89,0) 35%, rgba(12,24,22,1) 100%);
+      }
     }
+  }
+  &__work {
+    position: relative;
+    grid-column: span 12;
   }
 }
 svg:not(:root) {
@@ -242,6 +267,7 @@ figure {
   margin-bottom: 1.45rem;
 }
 hr {
+  grid-column: span 12;
   box-sizing: content-box;
   overflow: visible;
   margin-left: 0;
@@ -252,9 +278,9 @@ hr {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
+  background: hsla(0, 0%, 100%, 1);
   border: none;
-  height: 1px;
+  height: 2px;
 }
 button,
 input,
@@ -435,6 +461,13 @@ h6 {
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
   line-height: 1.53;
+}
+h1, h2, h3, h4, h5, h6 {
+  small {
+    display: block;
+    font-size: 46%;
+    font-weight: 600;
+  }
 }
 hgroup {
   margin-left: 0;
@@ -736,6 +769,49 @@ pre tt:after {
       &__inset {
         grid-column: 1 / span 7;
       }
+      &__case-study {
+        grid-column: 1 / span 12;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 54rem) {
+  main {
+    .intro {
+      &__case-study {
+        & > h1,
+        & > h2,
+        & > div {
+          grid-column: span 12;
+        }
+        *:last-child {
+          grid-column: span 12;
+        }
+      }
+    }
+  }
+  .work {
+    .row {
+      .bullets {
+        margin-bottom: 2rem;
+        grid-column: span 12;
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+        li {
+          grid-column: 5 / span 8;
+          &.title {
+            grid-column: 1 / span 4;
+            border-bottom: 0;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 700;
+            & + li {
+              border-top: 1px solid #B8BEBF;
+              padding-top: 0.6667rem;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -743,7 +819,8 @@ pre tt:after {
   body {
     padding: 0 3rem;
   }
-  main {
+  main,
+  main.work {
     row-gap: 3rem;
     .intro {
       grid-column: 1 / span 12;
@@ -767,6 +844,7 @@ pre tt:after {
     display: none;
   }
 }
+
 @media only screen and (max-width: 38rem) {
   h2 {
     font-size: 1.6rem;
@@ -799,18 +877,53 @@ pre tt:after {
     }
   }
 }
+@media only screen and (max-width: 34rem) {
+  .work {
+    .row {
+      .bullets {
+        li {
+          grid-column: 1 / span 12;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 30rem) {
     main {
       display: block;
+      &.work {
+        & > * {
+          margin: 2rem 0;
+          display: block;
+        }
+        .row .bullets {
+          display: block;
+          max-width: 100%;
+        }
+      }
+      .image-gallery {
+        display: block;
+        & > div {
+          margin-bottom: 1rem;
+        }
+      }
     }
 }
 @media only screen and (max-width: 26rem) {
   body {
     padding: 0 2rem;
   }
-  .intro__inset {
-    br {
-      display: none;
+  .intro {
+    &__inset {
+      br {
+        display: none;
+      }
+    } 
+    &__stretch {
+      h1 {
+        font-size: 1.6rem;
+      }
     }
   }
+
 }
