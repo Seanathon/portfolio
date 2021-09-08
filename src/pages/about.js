@@ -23,8 +23,8 @@ const IndexPage = () => (
       <p>Early on, Sean realized he was driven to make people’s lives easier through strategy, design, and technology. Needless to say, he’s still driven.</p>
       <p>His expertise has aided organizations across education, sports, music, science, art, real estate, entertainment, retail, and more. Things like Information architecture, UX research, interface design, and software engineering. </p>
       <div className="actions">
-          <a href="#">Developer Resume</a><br />
-          <a href="#">Designer Resume</a>
+          {/* <a href="#">Developer Resume</a><br />
+          <a href="#">Designer Resume</a> */}
       </div>
     </div>
     <div className="row info">
