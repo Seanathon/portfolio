@@ -13,14 +13,14 @@ const Header = ({ siteTitle }) => (
       </h1>
       <ul>
         <li>
-          <Link to="/info">Info</Link>
+          <Link to="/about">About Me</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/work">Work</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   </header>

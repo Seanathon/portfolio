@@ -8,9 +8,9 @@ const Footer = ({ social }) => (
         <footer>
             <div className="description">Sean Yalda is a Software Engineer and UX Design Consultant specialising in content, growth and marketing.</div>
             <ul className="pages">
-                <li><Link to="/info">Info</Link></li>
-                <li><Link to="/work">Work</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/about">About Me</Link></li>
+                {/* <li><Link to="/work">Work</Link></li> */}
+                {/* <li><Link to="/contact">Contact</Link></li> */}
             </ul>
             <ul className="ancillary">
                 {/* <li><Link to="/newsletter">Newsletter</Link></li> */}
@@ -22,7 +22,7 @@ const Footer = ({ social }) => (
                 <li><Link to={`https://github.com/${social.github}`}>GitHub</Link></li>
                 <li><Link to={`https://twitter.com/${social.twitter}`}>Twitter</Link></li>
             </ul>
-            <div className="cta">Need help or have a new project?<br /><Link to="/contact">Contact</Link></div>
+            <div className="cta">Need help or have a new project?{/*<br /><Link to="/contact">Contact</Link>*/}</div>
             <div className="email">Email at<br /><a href="mailto:seanyalda@gmail.com">seanyalda@gmail.com</a></div>
             <div className="phone">Call or text<br /><a href="tel:+15862954265">+1 (586) 295–4265</a></div>
             <div className="copyright"><b>©</b> 2020–{new Date().getFullYear()} <a href="https://www.seanyalda.com">Sean Yalda</a>. All rights reserved.</div>

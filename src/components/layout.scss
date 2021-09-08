@@ -166,6 +166,15 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.53;
+  a {
+    display: inline-block;
+    border-bottom: 3px solid #F2F0CE;
+    height: 1.35em;
+    text-shadow: 4px 1px #071615, -4px 1px #071615, 0px 1px #071615;
+  }
+}
+header h1 a {
+  border-bottom: 0;
 }
 mark {
   background-color: #ff0;
