@@ -112,7 +112,7 @@ const IndexPage = () => (
       <h2>Storytelling &amp; content strategy. <br />Culture &amp; computer interaction.</h2>
       <p>Sean often finds himself working within teams at the intersection of design & engineering, measuring his own value based off the return on investment companies get by hiring him using KPIs. Despite his broad creative skillset and experience, he’s equally effective in a specialized role (like software engineering).</p>
       <p>Based in LA, he likes to set momentum for work by cleaning his space — Decluttering progress from yesterday. He then spends his time designing & developing brands, products, and services. His goals: enrich society and earn generational wealth.</p>
-      <p>Sean likes to find ways to thrive in life while honoring my environment and the people in it. He follows joy where it leads him, but remembers to stay in touch with his other emotions. He like long walks; a meditative activity that breeds new ideas. He’s collaborative by nature and loves working with passionate teams who’re chasing amazing opportunities.</p>
+      <p>Sean likes to find ways to thrive in life while honoring his environment and the people in it. He follows joy where it leads him, but remembers to stay in touch with his other emotions. He like long walks; a meditative activity that breeds new ideas. He’s collaborative by nature and loves working with passionate teams who’re chasing amazing opportunities.</p>
     </div>
     <aside>
         <ul className="bullets">
