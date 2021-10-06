@@ -4,7 +4,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Work from "../components/workGallery/workGallery"
+// import Work from "../components/workGallery/workGallery"
 
 const IndexPage = () => (
   <Layout>
