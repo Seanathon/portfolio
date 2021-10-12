@@ -143,7 +143,7 @@ export const query = graphql`
                 name
                 size
                 childrenImageSharp {
-                    gatsbyImageData(placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP, AVIF])
+                    gatsbyImageData(placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP])
                 }
             }
         }
