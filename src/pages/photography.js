@@ -121,6 +121,8 @@ const IndexPage = () => {
     //     setPhotos(filteredByColor);
     // }
 
+
+
     // Initialize the intersection observer API
     React.useEffect(() => {
         var options = {
@@ -155,7 +157,7 @@ const IndexPage = () => {
 
     return (
         <Layout class="info">
-            <Seo title="About Sean Yalda" />
+            <Seo title="Photography of Sean Yalda" />
             <div className="photo-grid">
                 {
                     photos.map((e, i) => {
