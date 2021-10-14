@@ -1,5 +1,4 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import "./footer.scss"
 
@@ -9,6 +8,7 @@ const Footer = ({ social }) => (
             <div className="description">Sean Yalda is a Software Engineer and UX Design Consultant specialising in content, growth and marketing.</div>
             <ul className="pages">
                 <li><Link to="/about">About Me</Link></li>
+                <li><Link to="/photography">Photography</Link></li>
                 {/* <li><Link to="/work">Work</Link></li> */}
                 {/* <li><Link to="/contact">Contact</Link></li> */}
             </ul>
@@ -17,10 +17,10 @@ const Footer = ({ social }) => (
                 {/* <li><Link to="/bookshelf">Bookshelf</Link></li> */}
             </ul>
             <ul className="social">
-                <li><Link to={`https://linkedin.com/in/${social.in}`}>LinkedIn</Link></li>
-                <li><Link to={`https://instagram.com/${social.ig}`}>Instagram</Link></li>
-                <li><Link to={`https://github.com/${social.github}`}>GitHub</Link></li>
-                <li><Link to={`https://twitter.com/${social.twitter}`}>Twitter</Link></li>
+                <li><a href={`https://linkedin.com/in/${social.in}`}>LinkedIn</a></li>
+                <li><a href={`https://instagram.com/${social.ig}`}>Instagram</a></li>
+                <li><a href={`https://github.com/${social.github}`}>GitHub</a></li>
+                <li><a href={`https://twitter.com/${social.twitter}`}>Twitter</a></li>
             </ul>
             <div className="cta">Need help or have a new project?{/*<br /><Link to="/contact">Contact</Link>*/}</div>
             <div className="email">Email at<br /><a href="mailto:seanyalda@gmail.com">seanyalda@gmail.com</a></div>
