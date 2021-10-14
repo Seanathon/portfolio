@@ -5,6 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import resume from "../../static/files/SeanYalda-2021-SE-Resume.pdf"
+
 const IndexPage = () => (
   <Layout class="info">
     <Seo title="About Sean Yalda" />
@@ -23,8 +25,8 @@ const IndexPage = () => (
       <p>Early on, Sean realized he was driven to make people’s lives easier through strategy, design, and technology. Needless to say, he’s still driven.</p>
       <p>His expertise has aided organizations across education, sports, music, science, art, real estate, entertainment, retail, and more. Things like Information architecture, UX research, interface design, and software engineering. </p>
       <div className="actions">
-          {/* <a href="#">Developer Resume</a><br />
-          <a href="#">Designer Resume</a> */}
+          <a href={resume}>Developer Resume</a><br />
+          {/* <a href="#">Designer Resume</a> */}
       </div>
     </div>
     <div className="row info">
