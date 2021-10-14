@@ -49,3 +49,18 @@
 .card-wide {
     grid-column: span 2 / auto;
 }
+
+@media only screen and (max-width: 42rem) {
+    .card-full {
+        grid-row: span 1 / auto;
+        grid-column: span 1 / auto;
+    }
+    
+    .card-tall {
+        grid-row: span 1 / auto;
+    }
+    
+    .card-wide {
+        grid-column: span 1 / auto;
+    }
+}
