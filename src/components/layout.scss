@@ -246,7 +246,7 @@ img {
       top: 0;
       left: 0;
       &__linear-right {
-        background: linear-gradient(90deg, rgba(2,81,89,0) 35%, rgba(12,24,22,1) 100%);
+        background: linear-gradient(90deg, rgba(2,81,89,0) 35%, rgba(12,24,22,1) 100%), linear-gradient(-173deg, rgba(2, 81, 89, 0) 35%, rgba(12,24,22, 0.5) 100%);
       }
     }
   }

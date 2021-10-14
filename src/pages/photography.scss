@@ -21,6 +21,15 @@
     transition: all ease-in-out 320ms;
 }
 
+.on-focus {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 // .photo-grid > div:hover {
 //     position: absolute;;
 //     // transform: scale(1.2);
