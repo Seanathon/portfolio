@@ -167,7 +167,7 @@ const IndexPage = () => {
                             if (image.height > image.width * 1.3) {
                                 styleName = 'card-tall'
                             } 
-                            if (image.width > image.height * 1.6) {
+                            if (image.width > image.height * 1.65) {
                                 styleName = 'card-wide'
                             } 
                             if (i % 5 === 0 && styleName === '' && i !== 0 ) {
