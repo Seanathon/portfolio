@@ -39,6 +39,7 @@ const IndexPage = () => (
           <li>FACINGS</li>
           <li>Oakland University</li>
           <li>8° Plato</li>
+          <li>Matt Sukkar</li>
       </ul>
       <ul className="bullets">
           <li></li>
@@ -48,6 +49,7 @@ const IndexPage = () => (
           <li>Alumni Association of U of M</li>
           <li>Sun Communities</li>
           <li>City of Detroit</li>
+          <li>EVERYWHERE</li>
       </ul>
     </div>
     <div className="row info">
