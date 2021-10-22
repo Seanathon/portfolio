@@ -58,15 +58,15 @@ const IndexPage = () => (
           <li></li>
           <li>Software Engineering</li>
           <li>Information Architecture</li>
-          <li>User Experience</li>
-          <li>Pitch Deck</li>
+          <li>UX/UI Design</li>
+          <li>Pitch Deck Design</li>
           <li>Creative Direction</li>
       </ul>
       <ul className="bullets">
           <li></li>
           <li>Product Management</li>
           <li>System Design</li>
-          <li>Interface Design</li>
+          <li>Photography</li>
           <li>Prototype Design</li>
           <li>Consulting</li>
       </ul>
