@@ -23,7 +23,7 @@ const Footer = ({ social }) => (
                 <li><a href={`https://twitter.com/${social.twitter}`}>Twitter</a></li>
             </ul>
             <div className="cta">Need help or have a new project?{/*<br /><Link to="/contact">Contact</Link>*/}</div>
-            <div className="email">Email at<br /><a href="mailto:seanyalda@gmail.com">seanyalda@gmail.com</a></div>
+            <div className="email">Email at<br /><a href="mailto:seanyalda@pm.me">seanyalda@pm.me</a></div>
             <div className="phone">Call or text<br /><a href="tel:+15862954265">+1 (586) 295–4265</a></div>
             <div className="copyright"><b>©</b> 2020–{new Date().getFullYear()} <a href="https://www.seanyalda.com">Sean Yalda</a>. All rights reserved.</div>
         </footer>

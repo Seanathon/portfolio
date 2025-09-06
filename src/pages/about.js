@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import resume from "../../static/files/SeanYalda-2021-SE-Resume.pdf"
+// import resume from "../../static/files/SeanYalda-2021-SE-Resume.pdf"
 
 const IndexPage = () => (
   <Layout class="info">
@@ -21,11 +21,14 @@ const IndexPage = () => (
     </div>
     <div className="intro intro__right">
       <h1>About Sean Yalda</h1>
-      <p>Sean has been bringing ideas online since 2002. Professionally, he’s been employed in tech startups and digital agencies for eight years now. In this time, he’s helped many businesses make a profit &amp; impact.</p>
-      <p>Early on, Sean realized he was driven to make people’s lives easier through strategy, design, and technology. Needless to say, he’s still driven.</p>
-      <p>His expertise has aided organizations across education, sports, music, science, art, real estate, entertainment, retail, and more. Things like Information architecture, UX research, interface design, and software engineering. </p>
+      <p>Sean has been bringing ideas to life online since 2002. With over a decade of experience in tech startups and creative agencies, he's helped businesses grow, adapt, and connect — often by merging design with engineering in meaningful ways.</p>
+      <p>From his earliest ventures — turning side projects into full-time jobs — Sean has been motivated by a desire to make systems smoother, stories clearer, and life a little easier through thoughtful strategy, design, and technology. That drive hasn't gone away; it's just matured.</p>
+      <p>His work has touched industries like education, sports, music, science, real estate, art, and retail. Whether it's information architecture or UX research, interface design or front-end engineering — Sean's focus is aligning digital experiences with human needs.</p>
       <div className="actions">
-          <a href={resume}>Developer Resume</a><br />
+        <a href="https://www.linkedin.com/in/sean-yalda/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/seanathon" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/sleepysensei/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          {/* <a href={resume}>Developer Resume</a><br /> */}
           {/* <a href="#">Designer Resume</a> */}
       </div>
     </div>
@@ -33,6 +36,7 @@ const IndexPage = () => (
       <h2>Clients</h2>
       <ul className="bullets">
           <li></li>
+          <li>Sayari</li>
           <li>PlayVS</li>
           <li>Pitch Black Media</li>
           <li>Michigan Science Center</li>
@@ -45,6 +49,7 @@ const IndexPage = () => (
           <li></li>
           <li>Prettybird Productions</li>
           <li>Open Source Labs</li>
+          <li>Unforgettable Gala (2018)</li>
           <li>Fourclops</li>
           <li>Alumni Association of U of M</li>
           <li>Sun Communities</li>
@@ -113,34 +118,35 @@ const IndexPage = () => (
         </div>
     </div>
     <div className="intro intro__inset">
-      <h2>Storytelling &amp; content strategy. <br />Culture &amp; computer interaction.</h2>
-      <p>Sean often finds himself working within teams at the intersection of design & engineering, measuring his own value based off the return on investment companies get by hiring him using KPIs. Despite his broad creative skillset and experience, he’s equally effective in a specialized role (like software engineering).</p>
-      <p>Based in LA, he likes to set momentum for work by cleaning his space — Decluttering progress from yesterday. He then spends his time designing & developing brands, products, and services. His goals: enrich society and earn generational wealth.</p>
-      <p>Sean likes to find ways to thrive in life while honoring his environment and the people in it. He follows joy where it leads him, but remembers to stay in touch with his other emotions. He like long walks; a meditative activity that breeds new ideas. He’s collaborative by nature and loves working with passionate teams who’re chasing amazing opportunities.</p>
+      <h2>Narrative Systems &amp; Empathetic Strategy</h2>
+      <p>Sean often takes on hybrid roles where design meets code and business meets culture. He's fluent in metrics like KPIs and ROI, but rooted in the belief that the best outcomes come from empathy-driven thinking. He thrives in collaborative environments but knows how to navigate solo terrain — especially when building from scratch.</p>
+      <p>Currently based in Los Angeles, Sean designs and develops brands, products, and services with momentum. He starts most days by resetting his space — a habit that reflects his deeper approach to work: clear the clutter, trust the process.</p>
+      <p>His goals are both personal and far-reaching: to enrich society through good design and to build generational wealth with integrity.</p>
+      <p>A believer in curiosity and contrast, Sean draws inspiration from long walks, conversations with strangers, and moments of stillness. He's comfortable stepping into new roles, new cities, or new ideas — often finding insight where others might not look.</p>
+      <p>He's collaborative by nature, with a deep respect for culture, rhythm, and story. Whether he's working with nonprofits or global brands, he brings the same thoughtful energy to the table: listen first, build with care.</p>
     </div>
     <aside>
-        <ul className="bullets">
-            <li className="title">What they say</li>
-            <li>Creative thinker</li>
-            <li>Highly skilled</li>
-            <li>Problem solver</li>
-            <li>Patient mentor</li>
-        </ul>
-        <ul className="bullets">
-            <li className="title">Sean’s background</li>
-            <li>First Generation Assyrian/Chaldean-American</li>
-            <li>Majored in Graphic Design &amp; Illustration</li>
-            <li>Originally from Detroit, Based in Los Angeles</li>
-            <li>Been to countries in 3 continents, 47 states</li>
-        </ul>
-        <ul className="bullets">
-            <li className="title">What Sean’s parents think</li>
-            <li>He’s a computer guy</li>
-            <li>He’s a dreamer</li>
-            <li>He’s good with kids</li>
-            <li>He’s got a lot of friends</li>
-        </ul>
-    </aside>
+    <ul className="bullets">
+        <li className="title">Sean’s Background</li>
+        <li>First Generation Assyrian/Chaldean-American</li>
+        <li>Originally from Detroit, now based in Los Angeles</li>
+        <li>Majored in Graphic Design & Illustration</li>
+        <li>Self-taught engineer and startup founder</li>
+        <li>Built products used by hundreds of thousands</li>
+        <li>Created tools like <a href="https://cube.hywn.com">The Cube</a> & <a href="https://breakingchanges.ai">BreakingChanges.ai</a></li>
+        <li>Early adopter of AI for creative and technical workflows</li>
+        <li>World traveler — 47 U.S. states, 3 continents (so far)</li>
+        <li>Fatherhood reshaped his creative perspective</li>
+        <li>Believes in generational impact through design & tech</li>
+        <li>Former touring musician and busker (still jams when he can)</li>
+        <li>Hands-on with both code and carpentry (builds things that last)</li>
+        <li>Thrives in solo projects and collaborative teams alike</li>
+        <li>Knows how to read people, fix things, and spot patterns</li>
+        <li>U.S. Patent holder & classified inventor</li>
+        <li>Active contributor to open source projects</li>
+        <li>Helped raise over $100M in funding through pitch design</li>
+    </ul>
+</aside>
     {/* <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
